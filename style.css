@@ -655,9 +655,26 @@ span {
     display: flex;
 }
 
-.portfolio-box img {
+/* .portfolio-box img {
     width: 100%;
     transition: .5s ease;
+} */
+
+.portfolio-box img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    /* Adjust this value as needed */
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.portfolio-coitainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    /* Align items at the top of the grid */
+    gap: 2.5rem;
 }
 
 .portfolio-box:hover img {
